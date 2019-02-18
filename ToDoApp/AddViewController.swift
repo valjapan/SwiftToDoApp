@@ -25,7 +25,7 @@ class AddViewController: UIViewController {
         }
         //変数に入力内容を入れる
         todo.append(TodoTextField.text!)
-        //追加ボタンを押したらフィールドをからにする
+        //追加ボタンを押したらフィールドを空白にする
         TodoTextField.text = ""
         //変数の中身をUserDefaltsに追加
         UserDefaults.standard.set(todo, forKey: "TodoList")
